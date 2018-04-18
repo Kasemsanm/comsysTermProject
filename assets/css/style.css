@@ -1,0 +1,26 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300
+}
+
+.main_content{
+    min-height:700px;
+}
+
+
+@media (min-width: 0px) {
+    .news-img {
+        height: 750px;
+    }
+}
+
+@media (min-width: 768px) {
+    .news-img {
+        height: 500px;
+    }
+}
+@media (min-width: 991px) {
+    .news-img {
+        height: 200px;
+    }
+}
