@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,447 +14,675 @@
     <!-- Bootstrap core CSS -->
     <link href="https://mdbootstrap.com/previews/templates/blog/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Material Design Bootstrap -->
+    <!-- Material WORK Bootstrap -->
     <link href="https://mdbootstrap.com/previews/templates/blog/css/mdb.min.css" rel="stylesheet">
-    <style type="text/css">
-        html,
-        body,
-        header,
-        .jarallax {
-          height: 600px;
-        }
-
-        @media (max-width: 740px) {
-          html,
-          body,
-          header,
-          .jarallax {
-            height: 100%;
-          }
-        }
-
-        @media (min-width: 800px) and (max-width: 850px) {
-          html,
-          body,
-          header,
-          .jarallax {
-            height: 100%;
-          }
-        }
-    </style>
 
 </head>
 
-<body class="homepage-v1 hidden-sn animated">
+<body class="homepage-v2 hidden-sn animated">
 
-    <!--Navigation-->
+    <!--Main Navigation-->
     <header>
 
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg  navbar-light scrolling-navbar white">
-            <div class="container-fluid justify-content-center align-items-center">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark black">
+            <div class="container">
+                <a href="index.html" class="navbar-brand" href="#"><strong>Recruitment</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent-4">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown ml-4 mb-0">
-                            <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold " id="navbarDropdownMenuLink"  data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"> HOMEPAGE </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-1.html">V1</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-2.html">V2</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-3.html">V3</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-4.html">V4</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-5.html">V5</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-6.html">V6</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../homepage/v-7.html">V7</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown ml-4  mb-0">
-                            <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-2" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"> POST PAGE </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink-2">
-                                <a class="dropdown-item waves-effect waves-light" href="../postpage/v-1.html">V1</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../postpage/v-2.html">V2</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../postpage/v-3.html">V3</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../postpage/v-4.html">V4</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown ml-4  mb-0">
-                            <a href="#" class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-3"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink-3">
-                                <a class="dropdown-item waves-effect waves-light" href="../author page/v-1.html">V1</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../author page/v-2.html">V2</a>
-                                <a class="dropdown-item waves-effect waves-light" href="../author page/v-3.html">V3</a>
-                            </div>
-                        </li>
-                        <li class="nav-item ml-4 mb-0">
-                            <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">CONTACT
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                            <li class="nav-item active">
+                                    <a href="community.html" class="nav-link" href="#"> Community <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Register</a>
+                                </li>
+                            <li class="nav-item "><a href="#" id="navbar-static-login" class="nav-link" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-sign-in mr-1"></i><span class="clearfix d-none d-sm-inline-block">Log In</span></a></li>
                     </ul>
                 </div>
-
-                <ul class="navbar-nav ml-auto nav-flex-icons">
-                    <li class="nav-item ">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-
             </div>
 
+                
+            </ul>
         </nav>
-        <!-- /.Navbar -->
 
-        <!-- Intro Section -->
-        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/nature1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <div class="mask rgba-black-light">
-                <div class="container h-100 d-flex justify-content-center align-items-center">
-                    <div class="row pt-5 mt-3">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">
-                                    <strong>welcome on my blog</strong>
-                                </h1>
-                                <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-                                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s">
-                                    <strong>Travel & photography</strong>
-                                </h5>
-                                <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">my travels</a>
-                                <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>
-                            </div>
+        <div class="view intro-2">
+            <div class="full-bg-img">
+                <div class="mask rgba-black-strong flex-center">
+                    <div class="container">
+                        <div class="white-text text-center wow fadeInUp">
+                            <h2>This Navbar isn't fixed</h2>
+                            <h5>When you scroll down it will disappear</h5>
+                            <br>
+                            <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--/Intro-->
 
     </header>
-    <!-- /.Navigation -->
+    <!--Main Navigation-->
+    <!-- Main Layout -->
+    <main class="pt-0">
 
-    <!--Main layout-->
-    <main class="pt-3">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-half" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="view h-100">
+                        <img class="d-block h-100 w-lg-100" src="https://mdbootstrap.com/img/Photos/Others/city11.jpg" alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                </div>
+                <!--/First slide-->
+                <!--Second slide-->
+                <div class="carousel-item h-100">
+                    <img class="d-block h-100 w-lg-100" src="https://mdbootstrap.com/img/Photos/Others/intro2.jpg" alt="Second slide">
+                    <div class="mask rgba-black-light "></div>
+                </div>
+                <!--/Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <div class="view h-100">
+                        <img class="d-block h-100 w-lg-100" src="https://mdbootstrap.com/img/Photos/Others/city13.jpg" alt="Third slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                </div>
+                <!--/Third slide-->
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
 
-        <!--Blog-->
+        <!--Intro-->
         <section>
             <div class="container mt-5 pt-3">
+                <!--Excerpt-->
+            
+                <h1 class="text-center font-weight-bold dark-grey-text py-3">
+                    <strong>รับสมัครงานทั่วไทย</strong>
+                </h1>
 
-                <div class="row">
+                <p class="grey-text text-center mb-5 pb-3">
+                    <em>“เป็นองค์กรหลักที่มีประสิทธิภาพในการส่งเสริมการมีงานทำ คุ้มครองคนหางาน และให้บริการข้อมูลข่าวสารตลาดแรงงานที่ทันสมัย”</em>
+                </p>
+                <hr>
+                <!--Blog-->
+                <div class="row mt-5 pt-3">
 
                     <!--Main listing-->
-                    <div class="col-lg-8 col-12 mt-1 mx-lg-4">
+                    <div class="col-lg-9 col-12 mt-1">
 
-                        <!--Section: Classic blog listing-->
-                        <section class="section classic-blog-listing">
+                        <!--Section: Blog v.3-->
+                        <section class="section extra-margins pb-3 text-center text-lg-left">
 
                             <!--Grid row-->
-                            <div class="row mb-5">
-                                <!--Grid column-->
-                                <div class="col-md-12">
+                            <div class="row">
 
-                                    <!--Image-->
-                                    <div class="view overlay z-depth-1 mb-3">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20%28122%29.jpg" class="img-fluid">
-                                        <a href="#!">
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo9.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
-
-                                    <!--Excerpt-->
-                                    <a href="" class="">
-                                        <p class="text-center font-weight-bold gold-text mt-4">NATURE</p>
-                                    </a>
-
-                                    <h2 class="text-center font-weight-bold dark-grey-text pb-3">
-                                        <strong>This is title of the news</strong>
-                                    </h2>
-
-                                    <p class="dark-grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                        voluptatem sequi nesciunt.
-                                    </p>
-
-                                    <div class="text-center pb-2">
-                                        <a class="btn btn-transparent btn-sm font-weight-bold btn-rounded dark-grey-text">Read more</a>
-                                    </div>
-
-
-                                    <!--Post data-->
-                                    <div class="post-data mt-3 pt-3 grey-text">
-                                        <h6>By
-                                            <a href="#!" class="gold-text">Martha Barnett</a> on 25/08/2016
-                                            <a href="#!" class="dark-grey-text">
-                                                <i class="fa fa-comments-o pr-2 pl-3"></i>149</a>
-                                        </h6>
-
-                                        <ul class="list-unstyled list-inline circle-icons">
-                                            <!--Facebook-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="fb-ic">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <!--Twitter-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="tw-ic">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <!--Google +-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="gplus-ic">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
                                 </div>
                                 <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-3 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานพาร์ทไทม์</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">หางานพาร์ทไทม์ทำ อายุ17 อยูแถวพระราม2 พอจะมีงานให้ทำไหมคับ
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
                             </div>
                             <!--Grid row-->
 
-                            <!--Grid row-->
-                            <div class="row mb-5">
-                                <!--Grid column-->
-                                <div class="col-md-12">
+                            <hr class="mb-5">
 
-                                    <!--Image-->
-                                    <div class="view overlay z-depth-1 mb-3">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/8-col/img%20%2859%29.jpg" class="img-fluid">
-                                        <a href="#!">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo1.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
-
-                                    <!--Excerpt-->
-                                    <a href="" class="cyan-text">
-                                        <p class="text-center font-weight-bold gold-text mt-4">NATURE</p>
-                                    </a>
-
-                                    <h2 class="text-center font-weight-bold dark-grey-text pb-3">
-                                        <strong>This is title of the news</strong>
-                                    </h2>
-
-                                    <p class="dark-grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                        voluptatem sequi nesciunt.
-                                    </p>
-
-                                    <div class="text-center pb-2">
-                                        <a class="btn btn-transparent btn-sm font-weight-bold btn-rounded dark-grey-text">Read more</a>
-                                    </div>
-
-                                    <!--Post data-->
-                                    <div class="post-data mt-3 pt-3 grey-text">
-                                        <h6>By
-                                            <a href="#!" class="gold-text">Martha Barnett</a> on 25/08/2016
-                                            <a href="#!" class="dark-grey-text">
-                                                <i class="fa fa-comments-o pr-2 pl-3"></i>149</a>
-                                        </h6>
-
-                                        <ul class="list-unstyled list-inline circle-icons">
-                                            <!--Facebook-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="fb-ic">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <!--Twitter-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="tw-ic">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <!--Google +-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="gplus-ic">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
                                 </div>
                                 <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-3 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 12, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานพาร์ทไทม์</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">หางานหลังสองทุ่มคะ มีงานแนะนำหน่อยนะคะ
+                                            ต้องการรายได้เสริม แถว ม.กรุงเทพรังสิตคะ 😁
+                                            ขอบคุณมากค่ะ
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
                             </div>
                             <!--Grid row-->
 
-                            <!--Grid row-->
-                            <div class="row mb-5">
-                                <!--Grid column-->
-                                <div class="col-md-12">
+                            <hr class="mb-5">
 
-                                    <!--Image-->
-                                    <div class="view overlay z-depth-1 mb-3">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/8-col/img%20%2848%29.jpg" class="img-fluid">
-                                        <a href="#!">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo4.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
-
-                                    <!--Excerpt-->
-                                    <a href="" class="cyan-text">
-                                        <p class="text-center font-weight-bold gold-text mt-4">NATURE</p>
-                                    </a>
-
-                                    <h2 class="text-center font-weight-bold dark-grey-text pb-3">
-                                        <strong>This is title of the news</strong>
-                                    </h2>
-
-                                    <p class="dark-grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                        voluptatem sequi nesciunt.
-                                    </p>
-
-                                    <div class="text-center pb-2">
-                                        <a class="btn btn-transparent btn-sm font-weight-bold btn-rounded dark-grey-text">Read more</a>
-                                    </div>
-
-                                    <!--Post data-->
-                                    <div class="post-data mt-3 pt-3 grey-text">
-                                        <h6>By
-                                            <a href="#!" class="gold-text">Martha Barnett</a> on 25/08/2016
-                                            <a href="#!" class="dark-grey-text">
-                                                <i class="fa fa-comments-o pr-2 pl-3"></i>149</a>
-                                        </h6>
-
-                                        <ul class="list-unstyled list-inline circle-icons">
-                                            <!--Facebook-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="fb-ic">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <!--Twitter-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="tw-ic">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <!--Google +-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="gplus-ic">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
                                 </div>
                                 <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 29, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">สวัสดีค่ะ
+                                            ตอนนี้ต้องการหางานค่ะ งาน ดูแลเด็ก ดูแลคนชรา ทำการเกษตร หรืองานอะไรก็ได้ที่ได้เงินดี ขอที่ออกค่าเดินทางให้ด้วยได้ยิ่งดีค่ะ เป็นซิงเกิ้ลมัม ลูก 1 ต้องการหาเงินใช้หนี้ค่ะ พูดภาษาอังกฤษได้นิดหน่อยค่ะ พร้อมเดินทางได้ทันทีที่ได้วีซ่า สนใจติดต่อได้ที่เบอร์ 0931346485 ขอบคุณค่ะ
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
                             </div>
                             <!--Grid row-->
 
-                            <!--Grid row-->
-                            <div class="row mb-5">
-                                <!--Grid column-->
-                                <div class="col-md-12">
+                            <hr class="mb-5">
 
-                                    <!--Image-->
-                                    <div class="view overlay z-depth-1 mb-3">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20%28115%29.jpg" class="img-fluid">
-                                        <a href="#!">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo5.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
-
-                                    <!--Excerpt-->
-                                    <a href="" class="cyan-text">
-                                        <p class="text-center font-weight-bold gold-text mt-4">NATURE</p>
-                                    </a>
-
-                                    <h2 class="text-center font-weight-bold dark-grey-text pb-3">
-                                        <strong>This is title of the news</strong>
-                                    </h2>
-
-                                    <p class="dark-grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                        voluptatem sequi nesciunt.
-                                    </p>
-
-                                    <div class="text-center pb-2">
-                                        <a class="btn btn-transparent btn-sm font-weight-bold btn-rounded dark-grey-text">Read more</a>
-                                    </div>
-
-                                    <!--Post data-->
-                                    <div class="post-data mt-3 pt-3 grey-text">
-                                        <h6>By
-                                            <a href="#!" class="gold-text">Martha Barnett</a> on 25/08/2016
-                                            <a href="#!" class="dark-grey-text">
-                                                <i class="fa fa-comments-o pr-2 pl-3"></i>149</a>
-                                        </h6>
-
-                                        <ul class="list-unstyled list-inline circle-icons">
-                                            <!--Facebook-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="fb-ic">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <!--Twitter-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="tw-ic">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <!--Google +-->
-                                            <li class="list-inline-item mr-0">
-                                                <a class="gplus-ic">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
                                 </div>
                                 <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Aug 23, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">อยากหาประสบการณ์ที่ต่างประเทศค่ะ พอจะมีงานที่ต่างประเทศแนะนำบ้างไหมค่ะ
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
                             </div>
                             <!--Grid row-->
+
+                            <hr class="mb-5">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo10.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Feb 02, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">ตอนนี้ผมกำลังมองหางานต่างประเทศ เช่นสิงคโปร์ มาเลย์  ญีปุ่น หรือประเทศที่ต้องบุคลากรในด้านนี้ 
+                                        ตัวผมเองมีความสามารถด้านออกแบบ เขียนแบบระบบไฟฟ้า สามารถออกแบบวงจรควบคุม อาทิ control pump  autoreclose  automatic transfer switch genset  switchboard  switchgear และวงจรควบคุมที่หลากหลาย ใช้โปรแกรม AUTOCAD ถือว่าคล่อง มีประสบการณ์ควบคุมงานระบบตามไซร์งาน 
+                                        เข้าใจเกี่ยวมาตรฐานสากล IEC DIN และ วสท.มอก. สามารถถอด BOQ  BOM ได้เลย วุฒิการอาจไม่สูงนัก จบ ปวส. แต่ทำงานด้านมา 10 ปีถือว่าเก่งด้านนี้ ตอนนี้ทำงานที่เชียงใหม่กับเจ้านายคนหนึ่ง เงินเดือนเขา 19K  ผมก็พอใจนะแต่ยังพอที่จะเก็บสร้างตัว เพราะผมมีครอบครัวลูก2  สมาชิกท่านไหนมีแนวทาง มีประสบการณ์ด้านนี้ใน
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <hr class="mb-5">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Dec 02, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">ทำงานต่างประเทศอย่างเดียวเลย^^ เพราะเงินเดือนที่ได้ติดลบตลอด ก่อนจะตั้งกระทู้นี้ เจ้าของกระทู้ก็หาข้อมูลมาบ้างค่า แต่ข้อมูลที่ได้ส่วนใหญ่จะเป็นการทำงานผ่านเอเจนต์ ซึ่งค่าใช้จ่ายเยอะมาก ไม่มีทุนจ่ายค่านายหน้ามากพอค่า อยากจะรู้แนวทางการหางานต่างประเทศโดยไม่ผ่าน
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+                            <hr class="mb-5">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo2.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">ตอนนี้เรา 24 ทำงานในบริษัทเอกชนที่หนึ่งมาจะเข้าปีที่4แล้ว แต่เป็นซัปคอนแทค ยังไม่ได้ปรับเป็นพนักงานค่ะ คิดว่าคงยากเพราะพี่ๆบางคนอยู่มา 10-20 ปีแล้ว ยังไม่ได้ปรับเลย คณะที่เราเรียนตอนป.ตรี ก็ไม่ได้ตรงกับงาน โอกาสก้าวหน้าเลยยากเข้าไปใหญ่ เลยอยากลองหันไปทำ
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <hr class="mb-5">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/laptop1.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">ตอนนี้เรา 24 ทำงานในบริษัทเอกชนที่หนึ่งมาจะเข้าปีที่4แล้ว แต่เป็นซัปคอนแทค ยังไม่ได้ปรับเป็นพนักงานค่ะ คิดว่าคงยากเพราะพี่ๆบางคนอยู่มา 10-20 ปีแล้ว ยังไม่ได้ปรับเลย คณะที่เราเรียนตอนป.ตรี ก็ไม่ได้ตรงกับงาน โอกาสก้าวหน้าเลยยากเข้าไปใหญ่ เลยอยากลองหันไปทำ 
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <hr class="mb-5">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-5 mb-4">
+                                    <!--Featured image-->
+                                    <div class="view overlay z-depth-1">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" class="img-fluid" alt="First sample image">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-6 ml-xl-4 mb-4">
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-2 col-md-6 text-sm-center text-md-right text-lg-left">
+                                            <p class="orange-text font-small font-weight-bold mb-1 spacing">
+                                                <a>
+                                                    <strong>WORK</strong>
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-xl-5 col-md-6 text-sm-center text-md-left">
+                                            <p class="font-small grey-text">
+                                                <em> Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <h4 class="mb-3 dark-grey-text mt-0">
+                                        <strong>
+                                            <a>หางานที่ต่างประเทศ</a>
+                                        </strong>
+                                    </h4>
+                                    <p class="dark-grey-text">ตอนนี้เรา 24 ทำงานในบริษัทเอกชนที่หนึ่งมาจะเข้าปีที่4แล้ว แต่เป็นซัปคอนแทค ยังไม่ได้ปรับเป็นพนักงานค่ะ คิดว่าคงยากเพราะพี่ๆบางคนอยู่มา 10-20 ปีแล้ว ยังไม่ได้ปรับเลย คณะที่เราเรียนตอนป.ตรี ก็ไม่ได้ตรงกับงาน โอกาสก้าวหน้าเลยยากเข้าไปใหญ่ เลยอยากลองหันไปทำ
+                                        
+                                    </p>
+
+                                    <!--Deep-orange-->
+                                    <a href="views.html" class="btn btn-deep-orange btn-rounded btn-sm">Read more</a>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                          
 
                         </section>
-                        <!--Section: Classic blog listing-->
+                        <!--Section: Blog v.3-->
 
                         <!--Pagination dark grey-->
                         <nav class="mb-5 pb-2">
-                            <ul class="pagination pg-dark flex-center">
+                            <ul class="pagination pg-darkgrey flex-center">
                                 <!--Arrow left-->
                                 <li class="page-item">
-                                    <a class="page-link" aria-label="Previous">
+                                    <a class="page-link grey-text" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                         <span class="sr-only">Previous</span>
                                     </a>
@@ -466,21 +693,21 @@
                                     <a class="page-link">1</a>
                                 </li>
                                 <li class="page-item">
-                                    <a class="page-link">2</a>
+                                    <a class="page-link grey-text">2</a>
                                 </li>
                                 <li class="page-item">
-                                    <a class="page-link">3</a>
+                                    <a class="page-link grey-text">3</a>
                                 </li>
                                 <li class="page-item">
-                                    <a class="page-link">4</a>
+                                    <a class="page-link grey-text">4</a>
                                 </li>
                                 <li class="page-item">
-                                    <a class="page-link">5</a>
+                                    <a class="page-link grey-text">5</a>
                                 </li>
 
                                 <!--Arrow right-->
                                 <li class="page-item">
-                                    <a class="page-link" aria-label="Next">
+                                    <a class="page-link grey-text" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                         <span class="sr-only">Next</span>
                                     </a>
@@ -506,16 +733,16 @@
 
                             <!--Avatar-->
                             <div class="flex-center mt-4">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (33).jpg" class="img-fluid img-author z-depth-1">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" class="img-fluid img-author">
                             </div>
 
                             <!--Description-->
                             <p class="mt-3 dark-grey-text font-small text-center">
-                                <em>Hello, I'm Martha. I've 23 years old and my biggest passion is photography. I love travel
-                                    around the world and take photos of wild animals, landscapes and local people.</em>
+                                <em>Hello, I'm Adam. I've 23 years old and my biggest passion is WORK and photography. I love
+                                    travel around the world and take photos of street WORK and architecture.</em>
                             </p>
 
-                            <ul class="list-unstyled circle-icons flex-center">
+                            <ul class="list-unstyled list-inline-item circle-icons list-unstyled flex-center">
                                 <!--Facebook-->
                                 <li>
                                     <a class="fb-ic">
@@ -557,7 +784,7 @@
 
                                     <!--Image-->
                                     <div class="view overlay z-depth-1">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/8-col/img%20%2857%29.jpg" class="img-fluid" alt="Post">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo7.jpg" class="img-fluid" alt="Post">
                                         <a href="#!">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
@@ -569,19 +796,19 @@
                                             <a href="#!" class="text-hover">This is news title</a>
                                         </p>
                                         <p class="font-small grey-text">
-                                            <em>July 22, 2017</em>
+                                            <em>Apr 19, 2018</em>
                                         </p>
 
                                     </div>
                                 </div>
                                 <!--Grid column-->
 
-                                <!--Second column-->
+                                <!--Grid column-->
                                 <div class="col-md-6 col-lg-12">
 
                                     <!--Image-->
                                     <div class="view overlay z-depth-1">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20%28131%29.jpg" class="img-fluid" alt="Post">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/laptop1.jpg" class="img-fluid" alt="Post">
                                         <a href="#!">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
@@ -593,20 +820,20 @@
                                             <a href="#!" class="text-hover">This is news title</a>
                                         </p>
                                         <p class="font-small grey-text">
-                                            <em>July 22, 2017</em>
+                                            <em>Apr 19, 2018</em>
                                         </p>
 
                                     </div>
 
                                 </div>
-                                <!--Second column-->
+                                <!--Grid column-->
 
-                                <!--Third column-->
+                                <!--Grid column-->
                                 <div class="col-md-6 col-lg-12">
 
                                     <!--Image-->
                                     <div class="view overlay z-depth-1">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20%28120%29.jpg" class="img-fluid" alt="Post">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Post">
                                         <a href="#!">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
@@ -618,20 +845,20 @@
                                             <a href="#!" class="text-hover">This is news title</a>
                                         </p>
                                         <p class="font-small grey-text">
-                                            <em>July 22, 2017</em>
+                                            <em>Apr 19, 2018</em>
                                         </p>
 
                                     </div>
 
                                 </div>
-                                <!--Third column-->
+                                <!--Grid column-->
 
-                                <!--Fourth column-->
+                                <!--Grid column-->
                                 <div class="col-md-6 col-lg-12">
 
                                     <!--Image-->
                                     <div class="view overlay z-depth-1">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20%28121%29.jpg" class="img-fluid" alt="Post">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/photo12.jpg" class="img-fluid" alt="Post">
                                         <a href="#!">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
@@ -643,13 +870,13 @@
                                             <a href="#!" class="text-hover">This is news title</a>
                                         </p>
                                         <p class="font-small grey-text">
-                                            <em>July 22, 2017</em>
+                                            <em>Apr 19, 2018</em>
                                         </p>
 
                                     </div>
 
                                 </div>
-                                <!--Fourth column-->
+                                <!--Grid column-->
 
                             </div>
                             <!--Grid row-->
@@ -673,9 +900,7 @@
                                 <div class="col-md-12">
 
                                     <div class="input-group md-form form-sm form-3 pl-0">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text white black-text" id="basic-addon9">@</span>
-                                        </div>
+                                        <span class="input-group-text white black-text" id="basic-addon9">@</span>
                                         <input type="text" class="form-control mt-0 black-border rgba-white-strong" placeholder="Username" aria-describedby="basic-addon9">
                                     </div>
 
@@ -708,7 +933,7 @@
 
                                         <!--Image-->
                                         <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28125%29.jpg" class="img-fluid" alt="Post">
+                                            <img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid" alt="Post">
                                             <a>
                                                 <div class="mask rgba-white-slight"></div>
                                             </a>
@@ -726,7 +951,47 @@
                                                 <a href="#!" class="text-hover font-weight-bold">This is news title</a>
                                             </p>
                                             <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
+                                                <em>Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!--Second column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                            </div>
+
+                            <div class="post-border">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-5">
+
+                                        <!--Image-->
+                                        <div class="view overlay z-depth-1 mb-3">
+                                            <img src="https://mdbootstrap.com/img/Photos/Others/photo3.jpg" class="img-fluid" alt="Post">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Second column-->
+                                    <div class="col-7 mb-1">
+
+                                        <!--Post data-->
+                                        <div class="">
+                                            <p class="mb-1">
+                                                <a href="#!" class="text-hover font-weight-bold">This is news title</a>
+                                            </p>
+                                            <p class="font-small grey-text">
+                                                <em>Apr 19, 2018</em>
                                             </p>
 
                                         </div>
@@ -749,7 +1014,7 @@
 
                                         <!--Image-->
                                         <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28132%29.jpg" class="img-fluid" alt="Post">
+                                            <img src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" class="img-fluid" alt="Post">
                                             <a>
                                                 <div class="mask rgba-white-slight"></div>
                                             </a>
@@ -767,7 +1032,47 @@
                                                 <a href="#!" class="text-hover font-weight-bold">This is news title</a>
                                             </p>
                                             <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
+                                                <em>Apr 19, 2018</em>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!--Second column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                            </div>
+
+                            <div class="post-border">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-5">
+
+                                        <!--Image-->
+                                        <div class="view overlay z-depth-1 mb-3">
+                                            <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Post">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Second column-->
+                                    <div class="col-7 mb-1">
+
+                                        <!--Post data-->
+                                        <div class="">
+                                            <p class="mb-1">
+                                                <a href="#!" class="text-hover font-weight-bold">This is news title</a>
+                                            </p>
+                                            <p class="font-small grey-text">
+                                                <em>Apr 19, 2018</em>
                                             </p>
 
                                         </div>
@@ -790,7 +1095,7 @@
 
                                         <!--Image-->
                                         <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28126%29.jpg" class="img-fluid" alt="Post">
+                                            <img src="https://mdbootstrap.com/img/Photos/Others/photo9.jpg" class="img-fluid" alt="Post">
                                             <a>
                                                 <div class="mask rgba-white-slight"></div>
                                             </a>
@@ -808,129 +1113,7 @@
                                                 <a href="#!" class="text-hover font-weight-bold">This is news title</a>
                                             </p>
                                             <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-                                    <!--Second column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                            </div>
-
-                            <div class="post-border">
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-5">
-
-                                        <!--Image-->
-                                        <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28130%29.jpg" class="img-fluid" alt="Post">
-                                            <a>
-                                                <div class="mask rgba-white-slight"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Second column-->
-                                    <div class="col-7 mb-1">
-
-                                        <!--Post data-->
-                                        <div class="">
-                                            <p class="mb-1">
-                                                <a href="#!" class="text-hover font-weight-bold">This is news title</a>
-                                            </p>
-                                            <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                    <!--Second column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                            </div>
-
-                            <div class="post-border">
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-5">
-
-                                        <!--Image-->
-                                        <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28133%29.jpg" class="img-fluid" alt="Post">
-                                            <a>
-                                                <div class="mask rgba-white-slight"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Second column-->
-                                    <div class="col-7 mb-1">
-
-                                        <!--Post data-->
-                                        <div class="">
-                                            <p class="mb-1">
-                                                <a href="#!" class="text-hover font-weight-bold">This is news title</a>
-                                            </p>
-                                            <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-                                    <!--Second column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                            </div>
-
-                            <div class="post-border">
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-5">
-
-                                        <!--Image-->
-                                        <div class="view overlay z-depth-1 mb-3">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28122%29.jpg" class="img-fluid" alt="Post">
-                                            <a>
-                                                <div class="mask rgba-white-slight"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Second column-->
-                                    <div class="col-7 mb-1">
-
-                                        <!--Post data-->
-                                        <div class="">
-                                            <p class="mb-1">
-                                                <a href="#!" class="text-hover font-weight-bold">This is news title</a>
-                                            </p>
-                                            <p class="font-small grey-text">
-                                                <em>July 22, 2017</em>
+                                                <em>Apr 19, 2018</em>
                                             </p>
 
                                         </div>
@@ -977,19 +1160,19 @@
                                             <div class="carousel-item active">
                                                 <!--Mask color-->
                                                 <div class="view">
-                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(126).jpg" class="img-fluid" alt="">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Others/photo1.jpg" class="img-fluid" alt="">
                                                     <a href="#!">
-                                                        <div class="mask flex-center rgba-stylish-strong"></div>
+                                                        <div class="mask flex-center rgba-black-light"></div>
                                                     </a>
                                                 </div>
                                                 <!--Caption-->
                                                 <div class="carousel-caption">
                                                     <div class="animated fadeInDown">
                                                         <h4 class="h4-responsive">
-                                                            <a href="#!" class="white-text font-weight-bold">Your health</a>
+                                                            <a href="#!" class="white-text font-weight-bold">News title</a>
                                                         </h4>
                                                         <p>
-                                                            <a href="#!" class="white-text">Lorem ipsum</a>
+                                                            <a href="#!" class="white-text">Lorem ipsum dolor sit</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -1001,7 +1184,7 @@
                                             <div class="carousel-item">
                                                 <!--Mask color-->
                                                 <div class="view">
-                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(128).jpg" class="img-fluid" alt="">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Others/photo4.jpg" class="img-fluid" alt="">
                                                     <a href="#!">
                                                         <div class="mask flex-center rgba-black-light"></div>
                                                     </a>
@@ -1010,10 +1193,10 @@
                                                 <div class="carousel-caption">
                                                     <div class="animated fadeInDown">
                                                         <h4 class="h4-responsive">
-                                                            <a href="#!" class="white-text font-weight-bold">News title</a>
+                                                            <a href="#!" class="white-text">News title</a>
                                                         </h4>
                                                         <p>
-                                                            <a href="#!" class="white-text">Lorem ipsum</a>
+                                                            <a href="#!" class="white-text">Lorem ipsum dolor sit</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -1025,7 +1208,7 @@
                                             <div class="carousel-item">
                                                 <!--Mask color-->
                                                 <div class="view">
-                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(133).jpg" class="img-fluid" alt="">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Others/photo5.jpg" class="img-fluid" alt="">
                                                     <a href="#!">
                                                         <div class="mask flex-center rgba-black-light"></div>
                                                     </a>
@@ -1034,10 +1217,10 @@
                                                 <div class="carousel-caption">
                                                     <div class="animated fadeInDown">
                                                         <h4 class="h4-responsive">
-                                                            <a href="#!" class="white-text font-weight-bold">News title</a>
+                                                            <a href="#!" class="white-text">News title</a>
                                                         </h4>
                                                         <p>
-                                                            <a href="#!" class="white-text">Lorem ipsum</a>
+                                                            <a href="#!" class="white-text">Lorem ipsum dolor sit</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -1088,37 +1271,37 @@
                                     <ul class="list-unstyled mt-3">
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">August 2016</a>
+                                                <a href="#!" class="dark-grey-text">August 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">July 2016</a>
+                                                <a href="#!" class="dark-grey-text">Apr 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">June 2016</a>
+                                                <a href="#!" class="dark-grey-text">June 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">May 2016</a>
+                                                <a href="#!" class="dark-grey-text">May 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">April 2016</a>
+                                                <a href="#!" class="dark-grey-text">April 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">March 2016</a>
+                                                <a href="#!" class="dark-grey-text">March 2018</a>
                                             </h6>
                                         </li>
                                         <li>
                                             <h6 class="">
-                                                <a href="#!" class="dark-grey-text">Febuary 2016</a>
+                                                <a href="#!" class="dark-grey-text">Febuary 2018</a>
                                             </h6>
                                         </li>
                                     </ul>
@@ -1133,81 +1316,19 @@
                         </section>
                         <!--Archive-->
 
-                        <!--Title-->
-                        <hr>
-                        <p class="font-weight-bold dark-grey-text text-center spacing">
-                            <strong>FOLLOW ME</strong>
-                        </p>
-                        <hr>
-
-                        <!--Instagram-->
-                        <section class="sidebar-imgs mt-4 mb-4">
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <div id="mdb-lightbox-ui"></div>
-
-                                    <div class="mdb-lightbox">
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/1.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/1.jpg" class="img-fluid">
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/2.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/2.jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/3.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/3.jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/4.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/4.jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/5.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/5.jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-6">
-                                            <a href="https://mdbootstrap.com/img/Photos/Others/square/7.jpg" data-size="1600x1067">
-                                                <img src="https://mdbootstrap.com/img/Photos/Others/square/7.jpg" class="img-fluid" />
-                                            </a>
-                                        </figure>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <!--Grid row-->
-
-                        </section>
-                        <!--Instagram-->
-
                     </div>
                     <!--Sidebar-->
 
                 </div>
+                <!--Blog-->
 
             </div>
 
         </section>
-        <!--/Blog-->
+        <!--/Intro-->
 
     </main>
-    <!--Main layout-->
+    <!-- /.Main Layout -->
 
     <!--Footer-->
     <footer class="page-footer stylish-color-dark text-center text-md-left mt-4 pt-4">
@@ -1341,6 +1462,164 @@
     </footer>
     <!--/.Footer-->
 
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!--Modal: Contact form-->
+        <div class="modal-dialog cascading-modal" role="document">
+    
+            <!--Content-->
+            <div class="modal-content">
+    
+                <!--Header-->
+                <div class="modal-header primary-color white-text">
+                    <h4 class="title">
+                        <i class="fa fa-pencil"></i> Contact form</h4>
+                    <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+    
+                    <!-- Material input name -->
+                    <div class="md-form form-sm">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                        <label for="materialFormNameModalEx1">Your name</label>
+                    </div>
+    
+                    <!-- Material input email -->
+                    <div class="md-form form-sm">
+                        <i class="fa fa-lock prefix"></i>
+                        <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
+                        <label for="materialFormEmailModalEx1">Your email</label>
+                    </div>
+    
+                    <!-- Material input subject -->
+                    <div class="md-form form-sm">
+                        <i class="fa fa-tag prefix"></i>
+                        <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm">
+                        <label for="materialFormSubjectModalEx1">Subject</label>
+                    </div>
+    
+                    <!-- Material textarea message -->
+                    <div class="md-form form-sm">
+                        <i class="fa fa-pencil prefix"></i>
+                        <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control"></textarea>
+                        <label for="materialFormMessageModalEx1">Your message</label>
+                    </div>
+    
+                    <div class="text-center mt-4 mb-2">
+                        <button class="btn btn-primary">Send
+                            <i class="fa fa-send ml-2"></i>
+                        </button>
+                    </div>
+    
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+        <!--/Modal: Contact form-->
+    </div>
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+    
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+    
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                                </div>
+    
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+    
+                        </div>
+                        <!--/.Panel 7-->
+    
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+    
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                                </div>
+    
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                                </div>
+    
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                                </div>
+    
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+    
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+    
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: Login / Register Form-->
+  
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
@@ -1369,7 +1648,7 @@
     <script>
         // MDB Lightbox Init
         $(function () {
-            $("#mdb-lightbox-ui").load("https://mdbootstrap.com/previews/templates/blog/../mdb-addons/mdb-lightbox-ui.html");
+            $("#mdb-lightbox-ui").load("https://mdbootstrap.com/previews/templates/blog/https://mdbootstrap.com/previews/templates/blog/html/mdb-addons/mdb-lightbox-ui.html");
         });
     </script>
 </body>
