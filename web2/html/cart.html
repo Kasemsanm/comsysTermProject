@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTOP Select Products</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400,200&subset=thai,latin' rel='stylesheet' type='text/css'>
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/assets/external/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/product_default.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/component.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/animate.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/et-line-font.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/nivo-lightbox.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/nivo_themes/default/default.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/style.css">
+
+    <script src="http://77experience.com/themes/smartotop/assets/js/jquery.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- preloader section -->
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+    </div>
+
+    <!-- navigation section -->
+    <section class="navbar navbar-fixed-top custom-navbar inn-menu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="themes/smartotop/assets/img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav main-menu">
+                    <li class="">
+                        <form class="form-inline" style="margin: 4px">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                        </form>
+                    </li>
+                    <li class="">
+                        <a href="partner.html">แนะนำสถานที่</a>
+                    </li>
+                    <li class="active">
+                        <a href="product.html">ผลิตภัณฑ์</a>
+                    </li>
+                    <li class="">
+                        <a href="news.html">ข่าวสารและแหล่งความรู้</a>
+                    </li>
+                    <li class=" dropdown heademenu">
+                        <a>
+                            <i class="fa fa-user" aria-hidden="true"></i>สบาย รวยมาก</i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="">โปรไฟล์ของฉัน</a>
+                            <a href="dashboard\admin\dashbroad.html">จัดการร้านค้า</a>
+                            <a href="">ออกจากระบบ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="container product-catalog">
+        <div class="row">
+            <div class="col-sm-6 pdr-10">
+                <h1>กรุณากรอกข้อมูลเพื่อใช้ในการติดต่อกลับ</h1>
+                <form method="post" action="http://77experience.com/product/checkoutWishlist" data-toggle="validator" role="form">
+                    <input type="hidden" name="_token" value="nMi67jica0aL98CzOFuswS6ewUILKBv3BAeEGgU5">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <label for="firstname">ชื่อ*:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="ชื่อ" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lastname">นามสกุล*:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="นามสกุล" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="lastname">ทีอยู่*:</label>
+                            <textarea class="form-control" name="company_name" rows="3" placeholder="ทีอยู่"></textarea>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="email">Email*:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="your@domain.com" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="tel">เบอร์โทรศัพท์*:</label>
+                            <input type="text" class="form-control" id="tel" name="tel" placeholder="0800000000" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lineID">LineID:</label>
+                            <input type="text" class="form-control" id="lineID" name="lineID" placeholder="Your Account">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="center">
+                            <button onclick="window.print()" class="print-btn">พิมพ์หน้านี้</button>
+                            <input type="submit" name="submit" value="สั่งซื้อสิ้นค้า" class="blue-btn">
+                        </div>
+                    </div>
+            </div>
+            </form>
+            <div class="col-sm-6 totalpd-area">
+                <h3>สรุปรายการทั้งหมด
+                    <span>2 ชิ้น</span>
+                </h3>
+                <div class="totalpd-block">
+                    <ul>
+                        <li>1. กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย </li>
+                        <!-- <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a> กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย </li> -->
+                        <li>2. ถ่านดูดกลิ่น-กะลามะพร้าว </li>
+                        <!-- <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a> ถ่านดูดกลิ่น-กะลามะพร้าว </li> -->
+                    </ul>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+
+        </div>
+        <hr class="dot-hr">
+
+        <h2>รายการสินค้า</h2>
+        <div class="product-fav-area">
+            <ul>
+                <li>
+                    <a href="http://77experience.com/product/78">
+                        <div class="fav-img">
+                            <ul>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/78/78_D_2.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/78/78_D_3.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/78/78_tmp_1.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/78/78_tmp_2.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/78/78_D_1.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-catalog-info">
+                            <h4>1. กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย</h4>
+                            <!-- <div class="product-detail">
+                        <p><b>รายละเอียด :</b> หากเอ่ยถึงแบรนด์ “ขนมแม่เอย” หลายคนต้องนึกถึงขนมเปี๊ยะ เพราะเป็นสินค้าที่สร้างชื่อให้เจ้าของธุรกิจ แต่วันนี้จากการไม่หยุดพัฒนาสินค้าทำให้แม่เอยในวันนี้กลายเป็นขนมไทยพร้อมรับประทาน ยืนหยัดสูตรขนมไทยแบบดั้งเดิมที่นับวันเริ่มสูญหาย </p>
+                      </div> -->
+                            <p>
+                                <b>ผลิตโดย :</b> กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย</p>
+                            <p>
+                                <b>จังหวัด :</b> ชัยนาท</p>
+                            <p>
+                                <b>เบอร์ติดต่อ :</b> 05-499-496</p>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                    <div class="fav-btn active"></div>
+                    <div class="prd-id">78</div>
+                </li>
+                <p style="page-break-after:always;"></p>
+                <li>
+                    <a href="http://77experience.com/product/748">
+                        <div class="fav-img">
+                            <ul>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/748/748_D_3.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/748/748_D_2.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/748/748_P_1.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/748/748_D_1.jpg">
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="http://77experience.com/storage/products/748/748_E_1.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-catalog-info">
+                            <h4>2. ถ่านดูดกลิ่น-กะลามะพร้าว</h4>
+                            <!-- <div class="product-detail">
+                        <p><b>รายละเอียด :</b> หากเอ่ยถึงแบรนด์ “ขนมแม่เอย” หลายคนต้องนึกถึงขนมเปี๊ยะ เพราะเป็นสินค้าที่สร้างชื่อให้เจ้าของธุรกิจ แต่วันนี้จากการไม่หยุดพัฒนาสินค้าทำให้แม่เอยในวันนี้กลายเป็นขนมไทยพร้อมรับประทาน ยืนหยัดสูตรขนมไทยแบบดั้งเดิมที่นับวันเริ่มสูญหาย </p>
+                      </div> -->
+                            <p>
+                                <b>ผลิตโดย :</b> กลุ่มธูปหอมอัมพัน</p>
+                            <p>
+                                <b>จังหวัด :</b> ตาก</p>
+                            <p>
+                                <b>เบอร์ติดต่อ :</b> 05-802-707, 089-634-8491, 089-681-1221</p>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                    <div class="fav-btn active"></div>
+                    <div class="prd-id">748</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("img.lazy").lazyload();
+        });
+    </script>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="themes/smartotop/assets/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="cr-block">
+                        <span>
+                            <a href="index.html">www.example.com</a>
+                        </span>
+                        <span>© Copyrights 2018. All Rights Reserved.</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 txt-right">
+                    <a href="https://www.facebook.com/77Experience/" target="_blank" class="social-logo">
+                        <img src="http://77experience.com/themes/smartotop/assets/img/footer-fb.png" alt="" />
+                    </a>
+                    <a href="http://line.me/ti/p/%4077experience" target="_blank" class="social-logo">
+                        <img src="http://77experience.com/themes/smartotop/assets/img/footer-line.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://77experience.com/themes/smartotop/assets/js/wishlist.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/smoothscroll.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/isotope.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/imagesloaded.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/nivo-lightbox.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/jquery.backstretch.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/wow.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+</body>
+</html>

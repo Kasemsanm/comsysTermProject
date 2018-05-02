@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTOP Select Products</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400,200&subset=thai,latin' rel='stylesheet' type='text/css'>
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/assets/external/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/product_default.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/component.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/animate.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/et-line-font.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/nivo-lightbox.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/nivo_themes/default/default.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://77experience.com/themes/smartotop/assets/css/style.css">
+
+    <script src="http://77experience.com/themes/smartotop/assets/js/jquery.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- Modal -->
+    <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="report" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">แจ้งรายงานร้าน</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="firstname">เรื่อง*:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="เรื่อง" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="lastname">รายละเอียด*:</label>
+                            <textarea type="text" class="form-control" id="lastname" name="lastname" placeholder="รายละเอียด" rows="10" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                    <button type="button" class="btn btn-primary">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader section -->
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+    </div>
+
+    <!-- navigation section -->
+    <section class="navbar navbar-fixed-top custom-navbar inn-menu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="themes/smartotop/assets/img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav main-menu">
+                    <li class="">
+                        <form class="form-inline" style="margin: 4px">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                        </form>
+                    </li>
+                    <li class="">
+                        <a href="partner.html">แนะนำสถานที่</a>
+                    </li>
+                    <li class="active">
+                        <a href="product.html">ผลิตภัณฑ์</a>
+                    </li>
+                    <li class="">
+                        <a href="news.html">ข่าวสารและแหล่งความรู้</a>
+                    </li>
+                    <li class=" dropdown heademenu">
+                        <a>
+                            <i class="fa fa-user" aria-hidden="true"></i>สบาย รวยมาก</i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="">โปรไฟล์ของฉัน</a>
+                            <a href="dashboard\admin\dashbroad.html">จัดการร้านค้า</a>
+                            <a href="">ออกจากระบบ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" style="margin-top: 120px;">
+
+        <div class="wishlist-block">
+            <a href="cart.html">
+                จำนวนสินค้าที่สนใจ
+                <span id="cartCount">2 ชิ้น</span>
+            </a>
+        </div>
+
+        <!-- Product section -->
+
+        <div class="container product-detail-area">
+
+            <div class="product-type">
+                <div class="center">
+                    <h3>ร้านค้า</h3>
+                </div>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+                        <div class='carousel-outer'>
+                            <!-- Wrapper for slides -->
+                            <div class='carousel-inner'>
+                                <div class='item active'>
+                                    <img src='themes/smartotop/assets/img/example.jpg' alt=''>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                                <span class='glyphicon glyphicon-chevron-left'></span>
+                            </a>
+                            <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                                <span class='glyphicon glyphicon-chevron-right'></span>
+                            </a>
+                        </div>
+
+                        <!-- Indicators -->
+                        <ol class='carousel-indicators mCustomScrollbar'>
+                            <li data-target='#carousel-custom' data-slide-to="0" class='active'>
+                                <img src='themes/smartotop/assets/img/example.jpg'>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <h1>ร้านหวานมงคล</h1>
+                    <div class="product-desc">
+                        <p>
+                            <b>เรื่องราว :</b> ธุรกิจของเราเกิดจากใช้วัชพืชที่มีในชุมชนคือ ผักตบชวามาแปรรูปเป็น ผลิตภัณฑ์ ในห้วงเวลาที่ประเทศชาติกำลังเผชิญปัญหาวิกฤตทางเศรษฐกิจ
+                            และประชาชนทุกระดับประสบปัญหาต่างๆ ปัญหาหนึ่งที่ประชาชนระดับรากหญ้า ซึ่งเป็นคนกลุ่มใหญ่ของประเทศถูกรุมเร้าคือปัญหาความยากจน
+                            รัฐบาลจึงได้ประกาศสงครามกับความยากจน โดยได้แถลงนโยบายต่อรัฐสภาว่าจะจัดให้มีโครงการหนึ่งตำบลหนึ่งผลิตภัณฑ์
+                            เพื่อให้แต่ละชุมชนได้ใช้ภูมิปัญญาท้องถิ่นมาใช้ในการพัฒนาสินค้าโดยรัฐพร้อมที่จะเข้าช่วยเหลือในด้านความรู้สมัยใหม่
+                            และการบริหารจัดการเพื่อเชื่อมโยงสินค้าจากชุมชนสู่ตลาดทั้งในประเทศและต่างประเทศด้วยระบบร้านค้าเครือข่ายและอินเตอร์เน็ต
+                            เพื่อส่งเสริมและสนับสนุนกระบวนการพัฒนาท้องถิ่น สร้างชุมชนให้เข้มแข็ง พึ่งตนเองได้ ให้ประชาชนมีส่วนร่วมในการสร้างรายได้ด้วยการนำทรัพยากร
+                            ภูมิปัญญาในท้องถิ่นมาพัฒนาเป็นผลิตภัณฑ์และบริการที่มีคุณภาพ มีจุดเด่นและมูลค่าเพิ่ม เป็นที่ต้องการของตลาด
+                            ทั้งในและต่างประเทศ และได้กำหนดระเบียบสำนักนายกรัฐมนตรีว่าด้วยคณะกรรมการอำนวยการหนึ่งตำบล หนึ่งผลิตภัณฑ์
+                            แห่งชาติ พ.ศ. 2544 ประกาศ ณ วันที่ 7 กันยายน 2544 ขึ้น โดยกำหนดให้มีคณะกรรมการอำนวยการหนึ่งตำบล
+                            หนึ่งผลิตภัณฑ์แห่งชาติ หรือเรียกโดยย่อว่า “กอ.นตผ” ซึ่งนายกรัฐมนตรีได้มอบหมายให้รองนายกรัฐมนตรี
+                            (นายปองพล อดิเรกสาร) เป็นประธานกรรมการ และให้คณะกรรมการ กอ.นตผ มีอำนาจหน้าที่ในการกำหนดนโยบายยุทธศาสตร์และแผนแม่บทการดำเนินงาน“หนึ่งตำบล
+                            หนึ่งผลิตภัณฑ์” กำหนดมาตรฐานและหลักเกณฑ์การคัดเลือกและขึ้นบัญชีผลิตภัณฑ์ดีเด่นของตำบลรวมทั้งสนับสนุนให้การดำเนินงานเป็นไปตามนโยบาย
+                            ยุทธศาสตร์และแผนแม่บท อย่างมีประสิทธิภาพ</p>
+                        <p>
+                            <b>จุดเด่น :</b> ม่ความคงทน มีความสวยงาม ราคาไม่แพง สินค้ามีหลากหลายสไตส์</p>
+                        <p>
+                            <b>จังหวัด :</b> ชัยนาท</p>
+                        <p>
+                            <b>เบอร์โทรติดต่อ :</b> 05-499-496 </p>
+                    </div>
+                    <div class="product-tags">
+                        <ul>
+                            <li>
+                                <a class="wishlist-btn wishlist_78 active" data-toggle="modal" data-target="#report"> แจ้งรายงานร้าน</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="grid effect-3" id="grid">
+                <li>
+                    <a href="productview.html#4076">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/4076/4076_D_1.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>พุทธศิลป์นิล In the Box</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : นิล ณ กาญจน์
+                                <br> โทรติดต่อ : 088-540-9293
+                            </div>
+                            <div class="otop-by">จังหวัด : กาญจนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_4076 " data-value="4076"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#192">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/192/192_tmp_3.jpg" width='320' height='480.0452105114439'>
+                        <div class="product-hover">
+                            <h3>กระเป๋าเอกสาร จากเสื่อกก</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : แปรรูปเสื่อกก สมชาย ยะประดิษฐ์
+                                <br> โทรติดต่อ : 086-809-6122
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_192 " data-value="192"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#748">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/748/748_D_1.jpg" width='320' height='240'>
+                        <div class="product-hover">
+                            <h3>ถ่านดูดกลิ่น-กะลามะพร้าว</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มธูปหอมอัมพัน
+                                <br> โทรติดต่อ : 05-802-707, 089-634-8491, 089-681-1221
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_748 " data-value="748"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#309">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/309/309_D_3.jpg" width='320' height='426.4'>
+                        <div class="product-hover">
+                            <h3>ภูมิ แฮนด์ดิคราฟท์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ภูมิแฮนด์ดิคราฟ
+                                <br> โทรติดต่อ : 03-222-826, 081-665-6873
+                            </div>
+                            <div class="otop-by">จังหวัด : สระบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_309 " data-value="309"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3997">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3997/3997_D_1.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>ผลิตภัณฑ์งานทองเหลือง,เครื่องใช้ทองเหลือง</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มผลิตภัณฑ์งานทองเหลือง ระยอง
+                                <br> โทรติดต่อ : 081-410-4866, 081-001-8837
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3997 " data-value="3997"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#24">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/24/24_D_2.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>สมชัย ดนตรีไทย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : สมชัยดนตรีไทย
+                                <br> โทรติดต่อ : 081-913-3632
+                            </div>
+                            <div class="otop-by">จังหวัด : กาญจนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_24 " data-value="24"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#349">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/349/349_D_1.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>กลอง</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มผู้มีอาชีพทำกลองตำบลเอกราช
+                                <br> โทรติดต่อ : 081-587-4841, 084-427-1760
+                            </div>
+                            <div class="otop-by">จังหวัด : อ่างทอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_349 " data-value="349"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#192">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/192/192_tmp_2.jpg" width='320' height='213.313241665097'>
+                        <div class="product-hover">
+                            <h3>กระเป๋าเอกสาร จากเสื่อกก</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : แปรรูปเสื่อกก สมชาย ยะประดิษฐ์
+                                <br> โทรติดต่อ : 086-809-6122
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_192 " data-value="192"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#78">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/78/78_tmp_2.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย
+                                <br> โทรติดต่อ : 05-499-496
+                            </div>
+                            <div class="otop-by">จังหวัด : ชัยนาท</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_78 " data-value="78"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#78">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/78/78_D_1.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย
+                                <br> โทรติดต่อ : 05-499-496
+                            </div>
+                            <div class="otop-by">จังหวัด : ชัยนาท</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_78 " data-value="78"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#349">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/349/349_P_1.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>กลอง</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มผู้มีอาชีพทำกลองตำบลเอกราช
+                                <br> โทรติดต่อ : 081-587-4841, 084-427-1760
+                            </div>
+                            <div class="otop-by">จังหวัด : อ่างทอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_349 " data-value="349"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#745">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/745/745_P_1.jpg" width='320' height='426.5365853658537'>
+                        <div class="product-hover">
+                            <h3>ดอกไม้ประดิษฐ์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ไสว ฟลาเวอร์/หจก.บางกอกอาร์ทิฟิเชียลฟลาเวอร์ ฟายอาร์ท
+                                <br> โทรติดต่อ : 05-563-418, 085-872-6868
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_745 " data-value="745"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#24">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/24/24_P_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>สมชัย ดนตรีไทย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : สมชัยดนตรีไทย
+                                <br> โทรติดต่อ : 081-913-3632
+                            </div>
+                            <div class="otop-by">จังหวัด : กาญจนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_24 " data-value="24"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3725">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3725/3725_D_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>แก้วพันช์ ดินเผา</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : โอ้พัฒน์ ปั้นดินเผา
+                                <br> โทรติดต่อ : 089-121-8212
+                            </div>
+                            <div class="otop-by">จังหวัด : สิงห์บุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3725 " data-value="3725"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#309">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/309/309_D_2.jpg" width='320' height='426.6666666666666'>
+                        <div class="product-hover">
+                            <h3>ภูมิ แฮนด์ดิคราฟท์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ภูมิแฮนด์ดิคราฟ
+                                <br> โทรติดต่อ : 03-222-826, 081-665-6873
+                            </div>
+                            <div class="otop-by">จังหวัด : สระบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_309 " data-value="309"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#191">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/191/191_D_2.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ไม้กวาดใยตาล</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มอาชีพสตรีทำไม้กวาดตำบลโพธิ์งาม
+                                <br> โทรติดต่อ : 081-782-7061
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_191 " data-value="191"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#78">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/78/78_D_3.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มหัตถกรรมผักตบชวาบ้านอ้อย
+                                <br> โทรติดต่อ : 05-499-496
+                            </div>
+                            <div class="otop-by">จังหวัด : ชัยนาท</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_78 " data-value="78"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#235">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/235/235_P_1.jpg" width='320' height='406.4'>
+                        <div class="product-hover">
+                            <h3>ตู้ไม้สักจิ๋วลายไทย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มนิคแน็คตู้ไม้สักจิ๋วลายไทย
+                                <br> โทรติดต่อ : 086-797-7701
+                            </div>
+                            <div class="otop-by">จังหวัด : ราชบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_235 " data-value="235"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3997">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3997/3997_D_2.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>ผลิตภัณฑ์งานทองเหลือง,เครื่องใช้ทองเหลือง</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มผลิตภัณฑ์งานทองเหลือง ระยอง
+                                <br> โทรติดต่อ : 081-410-4866, 081-001-8837
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3997 " data-value="3997"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#745">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/745/745_E_1.jpg" width='320' height='426.4105642256903'>
+                        <div class="product-hover">
+                            <h3>ดอกไม้ประดิษฐ์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ไสว ฟลาเวอร์/หจก.บางกอกอาร์ทิฟิเชียลฟลาเวอร์ ฟายอาร์ท
+                                <br> โทรติดต่อ : 05-563-418, 085-872-6868
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_745 " data-value="745"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#192">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/192/192_D_2.jpg" width='320' height='213.3333333333333'>
+                        <div class="product-hover">
+                            <h3>กระเป๋าเอกสาร จากเสื่อกก</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : แปรรูปเสื่อกก สมชาย ยะประดิษฐ์
+                                <br> โทรติดต่อ : 086-809-6122
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_192 " data-value="192"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#235">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/235/235_D_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ตู้ไม้สักจิ๋วลายไทย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มนิคแน็คตู้ไม้สักจิ๋วลายไทย
+                                <br> โทรติดต่อ : 086-797-7701
+                            </div>
+                            <div class="otop-by">จังหวัด : ราชบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_235 " data-value="235"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#309">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/309/309_D_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ภูมิ แฮนด์ดิคราฟท์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ภูมิแฮนด์ดิคราฟ
+                                <br> โทรติดต่อ : 03-222-826, 081-665-6873
+                            </div>
+                            <div class="otop-by">จังหวัด : สระบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_309 " data-value="309"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3725">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3725/3725_D_3.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>แก้วพันช์ ดินเผา</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : โอ้พัฒน์ ปั้นดินเผา
+                                <br> โทรติดต่อ : 089-121-8212
+                            </div>
+                            <div class="otop-by">จังหวัด : สิงห์บุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3725 " data-value="3725"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3725">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3725/3725_P_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>แก้วพันช์ ดินเผา</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : โอ้พัฒน์ ปั้นดินเผา
+                                <br> โทรติดต่อ : 089-121-8212
+                            </div>
+                            <div class="otop-by">จังหวัด : สิงห์บุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3725 " data-value="3725"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#3997">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/3997/3997_D_3.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ผลิตภัณฑ์งานทองเหลือง,เครื่องใช้ทองเหลือง</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มผลิตภัณฑ์งานทองเหลือง ระยอง
+                                <br> โทรติดต่อ : 081-410-4866, 081-001-8837
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_3997 " data-value="3997"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#4090">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/4090/4090_D_3.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ชุดเครื่องกันไรฝุ่น WADEECARE</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : บริษัท ภวดีแฮปปี้เนส จำกัด
+                                <br> โทรติดต่อ : 086-394-5952
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_4090 " data-value="4090"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#4090">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/4090/4090_P_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ชุดเครื่องกันไรฝุ่น WADEECARE</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : บริษัท ภวดีแฮปปี้เนส จำกัด
+                                <br> โทรติดต่อ : 086-394-5952
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_4090 " data-value="4090"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#191">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/191/191_E_1.jpg" width='320' height='426.4'>
+                        <div class="product-hover">
+                            <h3>ไม้กวาดใยตาล</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มอาชีพสตรีทำไม้กวาดตำบลโพธิ์งาม
+                                <br> โทรติดต่อ : 081-782-7061
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_191 " data-value="191"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#4090">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/4090/4090_E_1.jpg" width='320' height='426.4'>
+                        <div class="product-hover">
+                            <h3>ชุดเครื่องกันไรฝุ่น WADEECARE</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : บริษัท ภวดีแฮปปี้เนส จำกัด
+                                <br> โทรติดต่อ : 086-394-5952
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_4090 " data-value="4090"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#192">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/192/192_D_1.jpg" width='320' height='213.3544178691441'>
+                        <div class="product-hover">
+                            <h3>กระเป๋าเอกสาร จากเสื่อกก</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : แปรรูปเสื่อกก สมชาย ยะประดิษฐ์
+                                <br> โทรติดต่อ : 086-809-6122
+                            </div>
+                            <div class="otop-by">จังหวัด : ปราจีนบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_192 " data-value="192"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#745">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/745/745_D_2.jpg" width='320' height='480'>
+                        <div class="product-hover">
+                            <h3>ดอกไม้ประดิษฐ์</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : ไสว ฟลาเวอร์/หจก.บางกอกอาร์ทิฟิเชียลฟลาเวอร์ ฟายอาร์ท
+                                <br> โทรติดต่อ : 05-563-418, 085-872-6868
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_745 " data-value="745"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#235">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/235/235_D_3.jpg" width='320' height='473.6'>
+                        <div class="product-hover">
+                            <h3>ตู้ไม้สักจิ๋วลายไทย</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มนิคแน็คตู้ไม้สักจิ๋วลายไทย
+                                <br> โทรติดต่อ : 086-797-7701
+                            </div>
+                            <div class="otop-by">จังหวัด : ราชบุรี</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_235 " data-value="235"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#4090">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/4090/4090_D_1.jpg" width='320' height='213.6'>
+                        <div class="product-hover">
+                            <h3>ชุดเครื่องกันไรฝุ่น WADEECARE</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : บริษัท ภวดีแฮปปี้เนส จำกัด
+                                <br> โทรติดต่อ : 086-394-5952
+                            </div>
+                            <div class="otop-by">จังหวัด : ระยอง</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_4090 " data-value="4090"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#748">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/748/748_D_2.jpg" width='320' height='240'>
+                        <div class="product-hover">
+                            <h3>ถ่านดูดกลิ่น-กะลามะพร้าว</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มธูปหอมอัมพัน
+                                <br> โทรติดต่อ : 05-802-707, 089-634-8491, 089-681-1221
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_748 " data-value="748"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="productview.html#748">
+                        <img class="lazy" data-original="http://77experience.com/storage/products/748/748_E_1.jpg" width='320' height='426.6666666666666'>
+                        <div class="product-hover">
+                            <h3>ถ่านดูดกลิ่น-กะลามะพร้าว</h3>
+                            <div class="product-dec">
+                                ผลิตโดย : กลุ่มธูปหอมอัมพัน
+                                <br> โทรติดต่อ : 05-802-707, 089-634-8491, 089-681-1221
+                            </div>
+                            <div class="otop-by">จังหวัด : ตาก</div>
+                            <div class="cat-icon">
+                                <img src="http://77experience.com/themes/smartotop/assets/img/caticon/live-well.png">
+                            </div>
+                        </div>
+                        <div class="wishlist-icon wishlist-btn wishlist_748 " data-value="748"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script src="http://77experience.com/themes/smartotop/assets/js/products/modernizr.custom.js"></script>
+        <script src="http://77experience.com/themes/smartotop/assets/js/products/masonry.pkgd.min.js"></script>
+        <script src="http://77experience.com/themes/smartotop/assets/js/products/imagesloaded.js"></script>
+        <script src="http://77experience.com/themes/smartotop/assets/js/products/classie.js"></script>
+        <script src="http://77experience.com/themes/smartotop/assets/js/products/AnimOnScroll.js"></script>
+
+        <script>
+            $(function () {
+                $("img.lazy").lazyload();
+            });
+
+            new AnimOnScroll(document.getElementById('grid'), {
+                minDuration: 0.4,
+                maxDuration: 0.7,
+                viewportFactor: 0.2
+            });
+        </script>
+        <script>
+            var body = document.querySelector('body');
+
+            body.onkeydown = function (e) {
+                if (!e.metaKey) {
+                    e.preventDefault();
+                }
+
+                if (e.keyCode == '32' || e.keyCode == '39' || e.keyCode == '40') {
+                } else if (e.keyCode == '37' || e.keyCode == '38') {
+                }
+            };
+        </script>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="themes/smartotop/assets/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="cr-block">
+                        <span>
+                            <a href="index.html">www.example.com</a>
+                        </span>
+                        <span>© Copyrights 2018. All Rights Reserved.</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 txt-right">
+                    <a href="https://www.facebook.com/77Experience/" target="_blank" class="social-logo">
+                        <img src="http://77experience.com/themes/smartotop/assets/img/footer-fb.png" alt="" />
+                    </a>
+                    <a href="http://line.me/ti/p/%4077experience" target="_blank" class="social-logo">
+                        <img src="http://77experience.com/themes/smartotop/assets/img/footer-line.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://77experience.com/themes/smartotop/assets/js/wishlist.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/smoothscroll.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/isotope.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/imagesloaded.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/nivo-lightbox.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/jquery.backstretch.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/wow.min.js"></script>
+    <script src="http://77experience.com/themes/smartotop/assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+</body>
+
+</html>
